@@ -1,0 +1,50 @@
+{
+  "name": "rest-api-authentication",
+  "version": "1.0.0",
+  "description": "A secure rest api authentication with node (express.js)",
+  "author": "Oussama Djaidri",
+  "main": "app.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ousszizou/nodejs-rest-api.git"
+  },
+  "homepage": "https://github.com/ousszizou/nodejs-rest-api.git#readme",
+  "bugs": {
+    "url": "https://github.com/ousszizou/nodejs-rest-api.git/issues"
+  },
+  "scripts": {
+    "start": "babel-node src/app.js",
+    "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node src/app.js",
+    "lint": "eslint --fix src",
+    "test": "cross-env NODE_ENV=test jest --exit"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.1",
+    "supertest": "^4.0.2"
+  }
+}
